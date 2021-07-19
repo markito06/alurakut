@@ -1,9 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Box = styled.div`
   background: #FFFFFF;
   border-radius: 8px;
+
   padding: 16px;
+
   /* CSS Pré-Pronto */
   margin-bottom: 10px;
   .boxLink {
@@ -57,4 +59,4 @@ const Box = styled.div`
   }
 `;
 
-export  default  Box;
+export default Box
