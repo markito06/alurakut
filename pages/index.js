@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken";
 
 import MainGrid from '../src/components/MainGrid'
 import Box from '../src/components/Box'
-import {AlurakutMenu, AlurakutProfileSidebarMenuDefault, OrkutNostalgicIconSet} from '../src/lib/FamilyKutCommons';
+import {AlurakutMenu, AlurakutProfileSidebarMenuDefault, OrkutNostalgicIconSet} from '../src/lib/AluraKutCommons';
 import {ProfileRelationsBoxWrapper} from '../src/components/ProfileRelations';
 
 function ProfileSidebar(propriedades) {

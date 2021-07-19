@@ -1,6 +1,6 @@
 import React from 'react';
 // Hook do NextJS
-import { useRouter } from 'next/router';
+import {useRouter} from 'next/router';
 import nookies from 'nookies';
 
 export default function LoginScreen() {
@@ -8,12 +8,13 @@ export default function LoginScreen() {
     const [githubUser, setGithubUser] = React.useState('');
 
     return (
-        <main style={{ display: 'flex', flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <main style={{display: 'flex', flex: 1, alignItems: 'center', justifyContent: 'center'}}>
             <div className="loginScreen">
                 <section className="logoArea">
-                    <img src="https://alurakut.vercel.app/logo.svg" />
+                    <img src="https://alurakut.vercel.app/logo.svg"/>
 
-                    <p><strong>Conecte-se</strong> aos seus amigos e familiares usando recados e mensagens instantâneas</p>
+                    <p><strong>Conecte-se</strong> aos seus amigos e familiares usando recados e mensagens instantâneas
+                    </p>
                     <p><strong>Conheça</strong> novas pessoas através de amigos de seus amigos e comunidades</p>
                     <p><strong>Compartilhe</strong> seus vídeos, fotos e paixões em um só lugar</p>
                 </section>
@@ -27,7 +28,7 @@ export default function LoginScreen() {
                             headers: {
                                 'Content-Type': 'application/json'
                             },
-                            body: JSON.stringify({ githubUser: githubUser })
+                            body: JSON.stringify({githubUser: githubUser})
                         })
                             .then(async (respostaDoServer) => {
                                 const dadosDaResposta = await respostaDoServer.json()
@@ -60,7 +61,7 @@ export default function LoginScreen() {
 
                     <footer className="box">
                         <p>
-                            Ainda não é membro? <br />
+                            Ainda não é membro? <br/>
                             <a href="/login">
                                 <strong>
                                     ENTRAR JÁ
@@ -72,7 +73,8 @@ export default function LoginScreen() {
 
                 <footer className="footerArea">
                     <p>
-                        © 2021 alura.com.br - <a href="/">Sobre o Orkut.br</a> - <a href="/">Centro de segurança</a> - <a href="/">Privacidade</a> - <a href="/">Termos</a> - <a href="/">Contato</a>
+                        © 2021 alura.com.br - <a href="/">Sobre o Orkut.br</a> - <a href="/">Centro de
+                        segurança</a> - <a href="/">Privacidade</a> - <a href="/">Termos</a> - <a href="/">Contato</a>
                     </p>
                 </footer>
             </div>
